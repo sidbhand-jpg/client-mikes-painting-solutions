@@ -1,270 +1,317 @@
-// ============================================================
-// SITE CONFIG — Edit this file to update your entire website
-// ============================================================
-
 const CONFIG = {
-  // ── Business Identity ──────────────────────────────────────
-  businessName: "Apex Painting Co.",
-  tagline: "Your City's Most Trusted Residential & Commercial Painters",
-  phone: "(000) 000-0000",
-  phoneRaw: "0000000000",
-  email: "hello@apexpainting.com",
-  city: "Your City, ST",
-  state: "Your State",
-  stateShort: "ST",
-  address: "Your Address, City, ST 00000",
-  licenseNumber: "YOUR-LICENSE-NUMBER",
-
-  // ── Branding ─────────────────────────────────────────────
-  // Forest green + warm amber — craft / quality / trust
+  businessName: "Mike's Painting Solutions",
+  tagline: "Tampa's Most Trusted Residential & Commercial Painters",
+  phone: "423-732-0647",
+  phoneRaw: "4237320647",
+  email: "",
+  city: "Tampa",
+  state: "Florida",
+  stateShort: "FL",
+  address: "",
+  licenseNumber: "",
   colors: {
-    primary: "#1B4332",    // Deep forest green — professionalism / trust
-    secondary: "#0f192b",  // Dark slate — strength / depth
+    primary: "#1A2F4F",
+    secondary: "#2D3748",
   },
-
-  // ── Social Links ─────────────────────────────────────────
-  // Leave any URL empty ("") to hide that icon in the footer
   social: {
-    facebook:  "",
+    facebook: "",
     instagram: "",
-    youtube:   "",
-    tiktok:    "",
-    linkedin:  "",
-    yelp:      "",
-    houzz:     "",
-    nextdoor:  "",
+    youtube: "",
+    tiktok: "",
+    linkedin: "",
+    yelp: "",
+    houzz: "",
+    nextdoor: "",
   },
-
-  // ── Reviews Badge ────────────────────────────────────────
-  // Paste your Google Business Profile review link here.
-  // Leave empty ("") to hide the "Read Our Reviews on Google" badge.
   googleReviewsUrl: "",
-
-  // ── Social Proof ─────────────────────────────────────────
-  rating: "4.9",
+  rating: "",
   reviewCount: 0,
-  yearsExperience: 0,
+  yearsExperience: 19,
   projectsCompleted: "0+",
-  satisfactionRate: "98%",
-
-  // ── Webhook ───────────────────────────────────────────────
+  satisfactionRate: "100%",
   webhookUrl: "",
-
-  // ── Meta Pixel / Conversions API ───────────────────────────
-  // Paste your Meta Pixel ID here (16-digit number from Events Manager).
-  // Leave empty ("") to disable Pixel + attribution tracking site-wide.
   metaPixelId: "",
-
-  // ── Hero Section ─────────────────────────────────────────
   hero: {
-    headline: "Paint That Lasts. Work You Can Trust.",
-    subheadline: "Professional interior and exterior painting for homes and businesses. Meticulous prep, premium paints, and a finish that turns heads — guaranteed.",
+    headline: "Your Trusted Tampa Painters for Residential & Commercial Excellence",
+    subheadline: "Mike's Painting Solutions delivers superior quality, lasting finishes, and 100% satisfaction across Tampa Bay with nearly two decades of expertise.",
     ctaPrimary: "Get My Free Estimate",
     ctaSecondary: "See Our Work",
     heroImage: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&q=75&fm=webp&auto=format",
   },
-
-  // ── Services ─────────────────────────────────────────────
   services: [
     {
       slug: "interior-painting",
       name: "Interior Painting",
-      desc: "Flawless walls, crisp trim, and zero mess — in and out before you know it. We protect everything, paint everything, and leave nothing behind.",
+      desc: "Transform your living spaces with Mike's Painting Solutions' expert interior painting services, creating beautiful, lasting finishes throughout your Tampa home.",
       image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=75&fm=webp&auto=format",
-      longDesc: "Your home's interior deserves more than a quick coat slapped over old paint. We patch holes, sand rough spots, tape every edge, and apply two coats of premium paint — Benjamin Moore, Sherwin-Williams, or whatever you love. Our crew works clean: furniture moved and covered, floors protected, hardware taped. When we leave, all you'll notice is the fresh colour.",
+      longDesc: "Our interior painting services in Tampa are designed to revitalize your home's atmosphere. We meticulously prepare every surface, from walls and ceilings to trim and doors, ensuring a flawless and durable finish. Using premium paints and modern techniques, our skilled team minimizes disruption and delivers exceptional results that reflect your style and enhance your living environment. Trust Mike's Painting Solutions for a smooth, stress-free interior transformation.",
       benefits: [
-        "Full surface prep — patching, sanding, priming",
-        "Premium paints in any sheen or colour",
-        "Furniture moved and carefully protected",
-        "Zero-mess drop cloth and tape system",
-        "Two-coat coverage as standard",
-        "Touch-up kit left behind on every job",
+        "Enhanced Aesthetic Appeal: Elevate your home's beauty with fresh, vibrant colors.",
+        "Increased Property Value: A professional paint job adds significant market appeal.",
+        "Surface Protection: High-quality paints protect walls from wear and tear.",
+        "Expert Color Consultation: Guidance to choose the perfect palette for your space.",
+        "Meticulous Preparation: Thorough patching, sanding, and priming for a smooth finish.",
+        "Clean & Efficient Service: We respect your home, ensuring a tidy work area and timely completion.",
       ],
       faqs: [
-        { q: "How long does an interior painting project take?", a: "A single room typically takes one day. A full house interior ranges from 3–7 days depending on size and scope. We give you a room-by-room schedule so you're never in the dark." },
-        { q: "Do I need to move my furniture?", a: "We move and protect all standard furniture. We just ask that you remove small items, breakables, and personal belongings before we arrive." },
-        { q: "Can you match an existing paint colour?", a: "Yes. Bring us a chip or we can scan your wall with a colour spectrophotometer and mix an exact match at any paint store." },
-        { q: "What paint brands do you use?", a: "We work with Benjamin Moore, Sherwin-Williams, and Behr Premium. We'll recommend the right product for the surface and finish you want." },
+        {
+          question: "How long does interior painting typically take?",
+          answer: "The duration depends on the size of the space and the complexity of the job. A standard room might take 1-2 days, while a whole house could take several days to a week. We provide a detailed timeline with your free estimate.",
+        },
+        {
+          question: "Do I need to move all my furniture?",
+          answer: "While we appreciate you moving smaller, delicate items, our team will carefully move and cover larger furniture pieces to protect them during the painting process. We ensure everything is returned to its original place.",
+        },
+        {
+          question: "What kind of paint do you use for interiors?",
+          answer: "We primarily use high-quality, low-VOC (Volatile Organic Compound) paints from trusted brands, ensuring a durable finish and healthier indoor air quality. We can discuss specific paint types and finishes that best suit your needs and preferences during our consultation.",
+        },
+        {
+          question: "How do you protect my floors and belongings?",
+          answer: "We use drop cloths, plastic sheeting, and painter's tape to meticulously protect all non-painted surfaces, including floors, furniture, and fixtures, ensuring no drips or splatters occur.",
+        },
       ],
     },
     {
       slug: "exterior-painting",
       name: "Exterior Painting",
-      desc: "Curb appeal that lasts years, not months. Power washed, primed, and painted with weather-resistant coatings built for every season.",
-      image: "https://images.unsplash.com/photo-1558618047-f4e60cef8b3e?w=800&q=75&fm=webp&auto=format",
-      longDesc: "Exterior paint takes a beating every year — UV, rain, freeze-thaw cycles, and humidity. We don't shortcut the prep. Every surface is power washed, scraped, sanded, and primed before a single drop of topcoat touches it. We use 100% acrylic exterior paints rated for your climate — the same products that stand up on commercial buildings.",
+      desc: "Boost your curb appeal and protect your Tampa property with Mike's Painting Solutions' durable and beautiful exterior painting services.",
+      image: "https://images.unsplash.com/photo-1558618047-f4e60cef8b3e?w=800&q=75&fm-webp&auto=format",
+      longDesc: "The Florida climate can be harsh on your home's exterior. Our exterior painting services are designed to withstand Tampa's heat, humidity, and sun, providing long-lasting protection and a stunning finish. We begin with thorough pressure washing, surface repairs, and priming to ensure optimal adhesion and durability. Our experienced painters use premium, weather-resistant paints to give your home a fresh, vibrant look that enhances its curb appeal and value for years to come.",
       benefits: [
-        "Full pressure wash and dry before any painting",
-        "Scraping, sanding, and caulking all gaps",
-        "Spot primer on all bare wood and repaired areas",
-        "100% acrylic exterior paint for maximum durability",
-        "Colour consultation included at no charge",
-        "Written warranty on every exterior project",
+        "Superior Weather Protection: Shield your home from Tampa's sun, rain, and humidity.",
+        "Enhanced Curb Appeal: Significantly improve your property's first impression and value.",
+        "Preventative Maintenance: Protects against rot, mildew, and pest intrusion.",
+        "Expert Surface Preparation: Comprehensive cleaning, patching, and priming for lasting results.",
+        "Durable, Long-Lasting Finishes: We use high-quality, weather-resistant paints.",
+        "Experienced Local Team: Knowledgeable about Tampa's specific climate challenges.",
       ],
       faqs: [
-        { q: "How long does exterior paint last?", a: "With proper prep and quality product, 8–12 years on siding is realistic. We use exterior acrylics rated for your region. Trim may need refreshing sooner depending on sun exposure." },
-        { q: "When can you paint — what weather is okay?", a: "We paint in temperatures above 50°F with no rain in the forecast for 24 hours. We schedule around the weather so your finish cures correctly." },
-        { q: "Do you paint trim and doors too?", a: "Everything is included — siding, trim, fascia, soffits, doors, shutters, and gutters. We give you one cohesive exterior quote, not a confusing line-by-line breakdown." },
-        { q: "Will you repair rotted wood before painting?", a: "Yes — we identify and replace rotted boards or use epoxy wood filler for smaller sections before we paint. You'll get a detailed line item for any repairs during the estimate." },
+        {
+          question: "How often should I repaint my home's exterior in Tampa?",
+          answer: "Due to Tampa's climate, we generally recommend repainting your home's exterior every 5-7 years to maintain its protection and appearance. Regular inspections can help determine the optimal time.",
+        },
+        {
+          question: "What kind of preparation is involved for exterior painting?",
+          answer: "Preparation is key for exterior durability. We thoroughly pressure wash all surfaces, scrape loose paint, fill cracks and holes, caulk gaps, and prime bare wood or problem areas to ensure a smooth, adhesive base.",
+        },
+        {
+          question: "Are your exterior paints resistant to mildew and fading?",
+          answer: "Yes, we use high-quality exterior paints specifically formulated to resist mildew growth, fading from UV rays, and other weather-related wear common in the Tampa Bay area, ensuring your home looks great longer.",
+        },
+        {
+          question: "Will you protect my landscaping and outdoor fixtures?",
+          answer: "Absolutely. Our team takes great care to cover and protect all landscaping, plants, outdoor furniture, light fixtures, and windows from paint splatter and overspray throughout the entire project.",
+        },
       ],
     },
     {
       slug: "cabinet-painting",
       name: "Cabinet Painting & Refinishing",
-      desc: "Transform your kitchen without the cost of a remodel. Factory-smooth finish, any colour, done in days not weeks.",
-      image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=75&fm=webp&auto=format",
-      longDesc: "Kitchen cabinet painting is one of the highest-ROI upgrades you can make. We spray every door and drawer face off-site for a factory-grade finish, then re-hang everything level and true. The result looks like new cabinets for a fraction of the cost. We use cabinet-specific alkyd and waterborne coatings that resist grease, moisture, and the daily grind of a real kitchen.",
+      desc: "Give your kitchen or bathroom a fresh, modern look without the cost of replacement with our expert cabinet painting and refinishing services in Tampa.",
+      image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=75&fm-webp&auto=format",
+      longDesc: "Cabinet painting and refinishing are cost-effective ways to update your kitchen or bathroom. Mike's Painting Solutions specializes in transforming tired, outdated cabinets into beautiful, like-new features. We follow a meticulous process, including careful removal, thorough cleaning, sanding, priming, and applying multiple coats of high-quality, durable cabinet-specific finishes. The result is a smooth, factory-like finish that will refresh your space and add significant value to your Tampa home.",
       benefits: [
-        "Doors removed, sanded, and sprayed off-site",
-        "Grease and contaminant removal before any coating",
-        "Grain filler applied to wood for a smooth factory finish",
-        "Catalysed waterborne topcoat — chip and scratch resistant",
-        "All hardware removed, cleaned, and re-installed",
-        "Kitchen typically back in use within 3 days",
+        "Cost-Effective Renovation: Achieve a new look without the expense of full replacement.",
+        "Modernized Aesthetic: Update outdated cabinets to a contemporary style.",
+        "Durable, Smooth Finish: We use specialized paints for a factory-like, long-lasting surface.",
+        "Extensive Color Options: Choose from a wide range of colors to match your decor.",
+        "Minimal Disruption: Most work is done off-site, reducing impact on your daily routine.",
+        "Increased Home Value: A fresh kitchen or bathroom significantly boosts property appeal.",
       ],
       faqs: [
-        { q: "Is cabinet painting worth it vs. replacing?", a: "For most kitchens, absolutely. Cabinet painting runs 20–30% of the cost of new cabinets and can add significant resale value. The finish we apply is durable enough to last 10+ years with normal use." },
-        { q: "Can you paint laminate or previously painted cabinets?", a: "Yes — with the right adhesion primer and prep. We assess your cabinets during the free estimate and recommend the correct system for your specific material." },
-        { q: "Will my kitchen be usable during the project?", a: "We remove and return doors in stages so you're never without a kitchen entirely. The whole process typically runs 3–4 days from first day to re-hang." },
-        { q: "What colours work best for cabinets?", a: "We'll bring a full colour deck and discuss your counters, flooring, and lighting. Classic whites (Benjamin Moore Chantilly Lace, SW Alabaster) and muted greens and blues are very popular — but it's entirely your call." },
+        {
+          question: "How long does the cabinet painting process take?",
+          answer: "Typically, cabinet painting projects take about 5-7 days. This includes de-installation, off-site preparation and painting of doors and drawers, and on-site prep and painting of cabinet frames.",
+        },
+        {
+          question: "Can you paint any type of cabinet material?",
+          answer: "We can paint most cabinet materials, including wood, MDF, and laminate. During our consultation, we'll assess your specific cabinets to ensure they are suitable for painting and advise on the best approach.",
+        },
+        {
+          question: "Will the painted finish be durable and easy to clean?",
+          answer: "Yes, we use high-quality, durable cabinet-specific lacquers and enamels that are designed to withstand daily use, resist chipping, and are easy to clean, ensuring a beautiful and functional finish for years.",
+        },
+        {
+          question: "Do I need to empty my cabinets completely?",
+          answer: "Yes, we ask that you completely empty your cabinets and drawers before our team arrives. This allows us to work efficiently and ensures no items are damaged or stained during the process.",
+        },
       ],
     },
     {
       slug: "commercial-painting",
       name: "Commercial Painting",
-      desc: "Offices, retail, warehouses, and multi-family properties. Fast-turnaround work scheduled around your business hours.",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=75&fm=webp&auto=format",
-      longDesc: "Commercial painting has different demands from residential — tighter timelines, higher square footage, tenant schedules, and stricter safety requirements. We run multi-crew commercial projects and schedule work evenings, weekends, and phased by floor so your business keeps running. We're fully insured and carry certificates of insurance in whatever format your property manager needs.",
+      desc: "Enhance your business's professional image with Mike's Painting Solutions' reliable and efficient commercial painting services across Tampa Bay.",
+      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=75&fm-webp&auto=format",
+      longDesc: "First impressions matter, especially for businesses. Mike's Painting Solutions provides comprehensive commercial painting services for offices, retail spaces, warehouses, and more throughout Tampa. We understand the unique needs of commercial clients, offering flexible scheduling to minimize disruption to your operations. Our team delivers high-quality, durable finishes that reflect your brand's professionalism, using robust paints designed for high-traffic areas. Trust us to complete your project efficiently, on budget, and with minimal impact on your business.",
       benefits: [
-        "Multi-crew capacity for large square footage",
-        "After-hours and weekend scheduling available",
-        "Phased work plans to minimise business disruption",
-        "Low-VOC and zero-VOC options for occupied spaces",
-        "Full COI on request — any format required",
-        "Detailed written scope and change order process",
+        "Professional Image: A fresh coat of paint enhances your business's credibility and appeal.",
+        "Minimized Disruption: Flexible scheduling to work around your business hours.",
+        "Durable, High-Traffic Solutions: We use robust paints built to last in commercial environments.",
+        "Increased Property Value: Attract more clients and tenants with a well-maintained exterior.",
+        "Efficient Project Management: Timely completion with clear communication.",
+        "Experienced Commercial Team: Skilled in handling projects of all sizes and complexities.",
       ],
       faqs: [
-        { q: "Can you paint while our office is occupied?", a: "Yes — we use zero-VOC paints and schedule room-by-room so staff can work in adjacent areas. We ventilate during and after application to clear any odour." },
-        { q: "Do you handle multi-family and apartment buildings?", a: "Yes. We regularly paint common areas, corridors, unit turns, and building exteriors. We can coordinate directly with your property manager." },
-        { q: "What's your process for large commercial bids?", a: "We schedule a walkthrough, provide a detailed written scope with per-area pricing, and can phase the work to match your budget or occupancy schedule." },
+        {
+          question: "Can you work around our business hours to avoid disruption?",
+          answer: "Yes, we offer flexible scheduling options, including evenings and weekends, to minimize disruption to your business operations. We'll work closely with you to create a painting schedule that suits your needs.",
+        },
+        {
+          question: "What types of commercial properties do you paint in Tampa?",
+          answer: "We paint a wide range of commercial properties, including offices, retail stores, restaurants, medical facilities, warehouses, and multi-family residential buildings throughout the Tampa Bay area.",
+        },
+        {
+          question: "Do you use specialized paints for commercial projects?",
+          answer: "Yes, we often use commercial-grade paints that offer enhanced durability, washability, and specific properties like low-VOC for indoor air quality or anti-graffiti coatings, depending on the project's requirements.",
+        },
+        {
+          question: "Are you insured for commercial painting projects?",
+          answer: "Absolutely. Mike's Painting Solutions is fully licensed and insured, providing peace of mind for all our commercial clients. We adhere to all safety standards and regulations.",
+        },
       ],
     },
     {
       slug: "deck-fence-staining",
       name: "Deck & Fence Staining",
-      desc: "Restore weathered wood or give it a rich new colour. We clean, brighten, and seal — protecting your investment for years.",
-      image: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800&q=75&fm=webp&auto=format",
-      longDesc: "Wood decks and fences are constantly exposed to the elements. Without proper maintenance, they gray out, crack, and deteriorate fast. We strip old failing stain, clean and brighten the wood, and apply a penetrating oil or film-forming stain depending on the wood type and the look you want. The result: rich, protected wood that holds its colour season after season.",
+      desc: "Restore and protect your outdoor living spaces with Mike's Painting Solutions' professional deck and fence staining services in Tampa.",
+      image: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800&q=75&fm-webp&auto=format",
+      longDesc: "Your deck and fence are significant investments that enhance your outdoor enjoyment. In Tampa's climate, they require proper protection. Our deck and fence staining services clean, restore, and protect these surfaces from weathering, UV damage, and mildew. We carefully prepare the wood, apply high-quality stains or sealants that penetrate deeply, and leave you with a beautiful, protected outdoor space that will last for years.",
       benefits: [
-        "Power washing and wood brightener treatment",
-        "Old stain stripped if peeling or flaking",
-        "Penetrating oil stains for natural wood grain",
-        "Film-forming stains for maximum colour saturation",
-        "Sprayed and back-brushed for full penetration",
-        "Transparent to solid — any opacity available",
+        "Extended Lifespan: Protects wood from rot, decay, and insect damage.",
+        "Enhanced Appearance: Revitalizes faded wood with rich, natural colors.",
+        "Weather Protection: Shields against sun, rain, and humidity common in Tampa.",
+        "Mildew & Mold Resistance: Specialized treatments to combat fungal growth.",
+        "Increased Property Value: Well-maintained outdoor structures boost home appeal.",
+        "Expert Preparation: Thorough cleaning and sanding for optimal stain adhesion.",
       ],
       faqs: [
-        { q: "How often does a deck need to be re-stained?", a: "Penetrating oils typically last 2–4 years. Film-forming stains last 4–6 years. UV exposure and foot traffic are the biggest variables. We'll give you a maintenance timeline at the end of the job." },
-        { q: "Can you stain over an existing stain?", a: "It depends on the condition. If the old stain is in good shape and not peeling, we can apply a compatible stain over it. If it's failing, we strip to bare wood first for proper adhesion." },
-        { q: "Do you do fences and pergolas too?", a: "Yes — fences, pergolas, privacy screens, garden beds, and any exterior wood structure. We quote everything in one visit." },
+        {
+          question: "How often should I stain my deck or fence in Tampa?",
+          answer: "Given Tampa's climate, we typically recommend re-staining your deck every 2-3 years and your fence every 3-5 years, depending on the type of wood and exposure to the elements.",
+        },
+        {
+          question: "What's the difference between staining and sealing?",
+          answer: "Stains add color and penetrate the wood, offering UV protection and moisture resistance. Sealers primarily provide a clear protective barrier against moisture. Many products offer both staining and sealing properties for comprehensive protection.",
+        },
+        {
+          question: "Do you clean the deck/fence before staining?",
+          answer: "Yes, proper cleaning is crucial. We thoroughly power wash the deck or fence to remove dirt, grime, mildew, and loose old stain, ensuring the new stain adheres properly and provides a uniform finish.",
+        },
+        {
+          question: "Can I choose the color of the stain?",
+          answer: "Absolutely! We offer a wide range of stain colors, from transparent and semi-transparent to solid colors, allowing you to choose the perfect look that complements your home and personal style.",
+        },
       ],
     },
     {
       slug: "colour-consultation",
       name: "Colour Consultation",
-      desc: "Stuck choosing colours? Our on-site consultants help you pick a palette that works with your light, furnishings, and style.",
-      image: "https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=800&q=75&fm=webp&auto=format",
-      longDesc: "Colour is personal, and it looks different on a chip than it does on your wall. Our colour consultants come to your home or business with full fan decks, large-format sample boards, and years of experience with how colours read in different lighting conditions. We'll create a room-by-room colour plan that works together, fits your style, and you'll love for years.",
+      desc: "Confidently choose the perfect paint colors for your Tampa home or business with expert guidance from Mike's Painting Solutions' color consultation.",
+      image: "https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=800&q=75&fm-webp&auto=format",
+      longDesc: "Choosing the right colors can be daunting, but Mike's Painting Solutions makes it easy with our professional color consultation services. We consider your home's architectural style, existing decor, lighting conditions, and personal preferences to help you select a palette that creates the desired mood and enhances your space. Our experts understand how colors interact with Tampa's natural light and can guide you to choices that will look beautiful and last.",
       benefits: [
-        "In-home visit with full paint brand fan decks",
-        "Large 12×12\" sample boards in your top choices",
-        "Room-by-room colour scheme with flow recommendations",
-        "Digital room renders available on request",
-        "Consultation fee credited toward any painting project",
-        "Suitable for new builds, renovations, and restyls",
+        "Expert Guidance: Navigate color choices with a professional eye for design.",
+        "Cohesive Design: Ensure your chosen colors complement existing decor and architecture.",
+        "Optimal Lighting Consideration: Select colors that look best in your home's unique light.",
+        "Time & Stress Savings: Avoid costly mistakes and indecision with informed choices.",
+        "Personalized Palette: Create a look that truly reflects your style and personality.",
+        "Increased Confidence: Feel assured in your color selections before painting begins.",
       ],
       faqs: [
-        { q: "How does a colour consultation work?", a: "We visit your home, look at your existing furnishings, flooring, light sources, and style. We narrow down choices from the full brand deck, paint large samples on your walls, and put together a written colour plan." },
-        { q: "Is the consultation fee credited toward my project?", a: "Yes — the full consultation fee is credited when you book any painting project with us within 60 days." },
-        { q: "Can you help with exterior colours too?", a: "Absolutely. We consider your roof colour, hardscaping, neighbourhood context, and any HOA guidelines to find an exterior palette you're proud to come home to." },
+        {
+          question: "What does a color consultation involve?",
+          answer: "Our consultation involves an on-site visit where we discuss your vision, assess your space's lighting and existing elements, and provide expert recommendations for paint colors and finishes tailored to your preferences.",
+        },
+        {
+          question: "How long does a typical color consultation take?",
+          answer: "A standard color consultation usually takes about 1-2 hours, depending on the size of the project and the number of areas you'd like to discuss. We ensure ample time to address all your questions.",
+        },
+        {
+          question: "Can you help with both interior and exterior color choices?",
+          answer: "Yes, our color consultants are experienced in guiding both interior and exterior color selections. We help you choose palettes that enhance curb appeal and create inviting indoor environments, considering Tampa's unique aesthetic.",
+        },
+        {
+          question: "What if I'm not happy with the suggested colors?",
+          answer: "Our goal is your complete satisfaction. We work collaboratively, providing samples and discussing options until you feel confident and excited about your chosen colors. We ensure you love the palette before any paint is applied.",
+        },
       ],
     },
   ],
-
-  // ── Google Maps Embed ─────────────────────────────────────
-  // Paste a full Google Maps embed URL below to show the service area map.
-  // To get one: maps.google.com → search your area → Share → Embed a map → copy the src URL.
-  // Leave as "" to hide the map.
   googleMapsEmbedUrl: "",
-
-  // ── Service Areas ─────────────────────────────────────────
   serviceAreas: [
-    { slug: "your-city", name: "Your City", county: "Your County" },
-    { slug: "city-two", name: "City Two", county: "Your County" },
-    { slug: "city-three", name: "City Three", county: "Your County" },
-    { slug: "city-four", name: "City Four", county: "Your County" },
-    { slug: "city-five", name: "City Five", county: "Your County" },
-    { slug: "city-six", name: "City Six", county: "Your County" },
+    { slug: "tampa", name: "Tampa", county: "" }
   ],
-
-  // ── Testimonials ─────────────────────────────────────────
   testimonials: [
     {
-      name: "Rachel T.",
-      location: "Your City",
-      text: "They painted our entire house interior over four days — walls, trim, ceilings, the works. Everything was perfectly taped, floors were covered, and the finish is absolutely flawless. We'd hire them again without hesitation.",
-      stars: 5,
-      service: "Interior Painting",
+      quote: "Mike's Painting Solutions did an incredible job on our home's interior. The team was professional, clean, and the quality of work is outstanding. Our living room feels brand new!",
+      name: "Sarah",
+      city: "Tampa",
     },
     {
-      name: "Mark & Lisa C.",
-      location: "Your City",
-      text: "Our home exterior was badly faded and peeling in spots. They prepped everything properly, replaced a few rotted boards, and the final result looks like a brand new house. Neighbours keep stopping to ask who we used.",
-      stars: 5,
-      service: "Exterior Painting",
+      quote: "We hired Mike's Painting Solutions for our commercial office space in downtown Tampa, and they exceeded expectations. They worked around our schedule and delivered a flawless finish. Highly recommend!",
+      name: "David",
+      city: "Tampa",
     },
     {
-      name: "James W.",
-      location: "Your City",
-      text: "Cabinet painting was the best money we ever spent on our kitchen. Sprayed to a factory finish, everything re-hung level and perfectly aligned. It cost a quarter of new cabinets and looks even better.",
-      stars: 5,
-      service: "Cabinet Painting",
+      quote: "Our cabinets were desperate for an update, and Mike's team transformed them beautifully. It looks like a brand new kitchen for a fraction of the cost. Fantastic work!",
+      name: "Maria",
+      city: "Tampa",
     },
     {
-      name: "Sandra M.",
-      location: "Your City",
-      text: "We have a 12-unit building and they handled the full interior repaint on a tight timeline. Phased the work perfectly, zero complaints from tenants, and the corridors look brand new. Reliable and professional.",
-      stars: 5,
-      service: "Commercial Painting",
+      quote: "From the initial quote to the final walkthrough, Mike's Painting Solutions was a pleasure to work with. They repainted our exterior, and the house looks amazing and protected against the Florida weather.",
+      name: "John",
+      city: "Tampa",
     },
   ],
-
-  // ── Process Steps ─────────────────────────────────────────
   processSteps: [
     { title: "Free On-Site Estimate", desc: "We walk the project with you, assess every surface, and give you a detailed written quote — broken down by area with zero surprise add-ons." },
     { title: "Surface Prep", desc: "Power washing, scraping, patching, caulking, and priming. The paint is only as good as the surface underneath it." },
     { title: "Professional Application", desc: "Two coats of premium paint, meticulously cut in and rolled or sprayed by trained painters who care about the corners." },
     { title: "Final Walkthrough", desc: "We go room by room with you before we call the job done. Touch-ups handled on the spot. We don't leave until you're happy." },
   ],
-
-  // ── FAQs ─────────────────────────────────────────────────
   faqs: [
-    { q: "What paint brands do you use?", a: "We work with Benjamin Moore, Sherwin-Williams, and Behr Premium. We'll recommend the right product for your surface — but if you have a preference or existing paint, just let us know." },
-    { q: "Do I need to be home during the project?", a: "Not necessarily. Many clients give us a key and check in at the end of each day. We send a daily photo update so you always know where we are." },
-    { q: "How long does an exterior job take?", a: "Most single-family exteriors take 3–5 days. We account for prep time and always schedule buffer days in case weather pushes us back." },
-    { q: "Do you do repairs before painting?", a: "Yes — drywall patching, caulking, wood rot repair, and minor carpentry are all part of our prep process. Repairs are quoted separately as a line item so you know exactly what you're paying for." },
-    { q: "Are you licensed and insured?", a: "Yes — fully licensed with $2M in general liability insurance. We can provide a certificate of insurance in any format your landlord, HOA, or property manager needs." },
-    { q: "How do I pick a colour?", a: "We offer free colour consultation with every project. We bring fan decks, large sample boards, and the experience to help you pick something you'll love. The consultation is credited toward your project." },
-    { q: "Do you offer a warranty?", a: "Yes — every project includes a written workmanship warranty. If the paint peels, drips, or fails due to our work, we come back and fix it at no charge." },
-    { q: "What should I do to prepare before you arrive?", a: "Clear counters and shelves of small items, remove artwork from walls, and let us know about any pets. We handle the rest — furniture moving, floor protection, taping, everything." },
+    {
+      question: "How do I get a free estimate for my painting project in Tampa?",
+      answer: "Simply call us at 423-732-0647 or fill out the contact form on our website. We'll schedule a convenient time to visit your Tampa property, assess your needs, and provide a detailed, no-obligation quote.",
+    },
+    {
+      question: "What areas of Tampa Bay do you serve?",
+      answer: "Mike's Painting Solutions proudly serves Tampa and the surrounding areas in the Tampa Bay region. Contact us to confirm service availability in your specific neighborhood.",
+    },
+    {
+      question: "How long has Mike's Painting Solutions been in business?",
+      answer: "We have been providing dependable painting services to the Tampa Bay community since 2005, bringing nearly two decades of experience to every residential and commercial project.",
+    },
+    {
+      question: "Do you offer a warranty on your painting services?",
+      answer: "Yes, we stand behind the quality of our work. We offer a satisfaction guarantee and discuss specific warranty details for your project during the estimation process, ensuring your peace of mind.",
+    },
+    {
+      question: "What kind of paint brands do you use?",
+      answer: "We partner with leading paint manufacturers to use high-quality, durable paints that are best suited for the Florida climate and your specific project needs. We can discuss brand preferences during your consultation.",
+    },
+    {
+      question: "Is Mike's Painting Solutions licensed and insured?",
+      answer: "Yes, Mike's Painting Solutions is a fully licensed and insured painting contractor. We prioritize safety and professionalism on every job, protecting both our team and your property.",
+    },
+    {
+      question: "How do you ensure a clean work environment?",
+      answer: "Our team is committed to maintaining a clean and organized workspace. We meticulously cover furniture, floors, and non-painted surfaces, and we conduct thorough cleanup at the end of each workday and upon project completion.",
+    },
+    {
+      question: "What steps do I need to take before the painters arrive?",
+      answer: "We recommend removing small, delicate items and clearing pathways. For interior jobs, please empty cabinets if they are being painted. We will handle moving larger furniture and covering all surfaces.",
+    },
   ],
-
-  // ── Portfolio Projects ────────────────────────────────────
-  // Project photos moved to PROJECTS.js (sibling file) — see that file
-  // for why: frequent updates + isolating a malformed write from the
-  // rest of the site config.
-
-  // ── Legal ─────────────────────────────────────────────────
+  portfolioProjects: [
+    { title: "4-Bedroom Home — Full Interior", category: "Interior", img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=80" },
+    { title: "Victorian Exterior — Full Repaint", category: "Exterior", img: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=80" },
+    { title: "Kitchen Cabinet Transformation", category: "Cabinets", img: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80" },
+    { title: "12-Unit Corridor Repaint", category: "Commercial", img: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" },
+    { title: "Cedar Deck — Oil Stain Restoration", category: "Deck & Fence", img: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800&q=80" },
+    { title: "Office Suite — Low-VOC Repaint", category: "Commercial", img: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&q=80" },
+  ],
   legal: {
     privacyPolicyDate: "May 1, 2025",
     termsDate: "May 1, 2025",
